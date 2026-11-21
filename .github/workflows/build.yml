@@ -1,0 +1,41 @@
+name: Build MerilView iOS IPA
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build-ipa:
+    runs-on: macos-14
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Select Xcode 15/16
+        run: sudo xcode-select -s /Applications/Xcode_15.4.app || sudo xcode-select -s /Applications/Xcode_16.0.app
+
+      - name: Build Unsigned IPA for Sideloadly
+        run: |
+          xcodebuild clean build \
+            -project MerilView-iOS.xcodeproj \
+            -scheme MerilView \
+            -destination 'generic/platform=iOS' \
+            -configuration Release \
+            -derivedDataPath build \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO
+          mkdir -p Payload
+          cp -r build/Build/Products/Release-iphoneos/MerilView.app Payload/
+          zip -r MerilView.ipa Payload
+          echo "MerilView.ipa created successfully!"
+
+      - name: Upload IPA Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: MerilView-IPA
+          path: MerilView.ipa
+          retention-days: 14

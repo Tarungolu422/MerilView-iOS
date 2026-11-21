@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA1000012CE0000100000001 /* MerilViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000012CE0000100000001 /* MerilViewApp.swift */; };
+		AA1000022CE0000100000001 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000022CE0000100000001 /* AppState.swift */; };
+		AA1000032CE0000100000001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000032CE0000100000001 /* ContentView.swift */; };
+		AA1000042CE0000100000001 /* DicomStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000042CE0000100000001 /* DicomStudy.swift */; };
+		AA1000052CE0000100000001 /* DicomSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000052CE0000100000001 /* DicomSeries.swift */; };
+		AA1000062CE0000100000001 /* DicomInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000062CE0000100000001 /* DicomInstance.swift */; };
+		AA1000072CE0000100000001 /* DicomMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000072CE0000100000001 /* DicomMetadata.swift */; };
+		AA1000082CE0000100000001 /* SpatialGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000082CE0000100000001 /* SpatialGeometry.swift */; };
+		AA1000092CE0000100000001 /* Measurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000092CE0000100000001 /* Measurements.swift */; };
+		AA1000102CE0000100000001 /* Annotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000102CE0000100000001 /* Annotations.swift */; };
+		AA1000112CE0000100000001 /* SegmentationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000112CE0000100000001 /* SegmentationModels.swift */; };
+		AA1000122CE0000100000001 /* PacsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000122CE0000100000001 /* PacsModels.swift */; };
+		AA1000132CE0000100000001 /* MerilDicomParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000132CE0000100000001 /* MerilDicomParser.swift */; };
+		AA1000142CE0000100000001 /* MerilLutEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000142CE0000100000001 /* MerilLutEngine.swift */; };
+		AA1000152CE0000100000001 /* MerilDicomDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000152CE0000100000001 /* MerilDicomDecoder.swift */; };
+		AA1000162CE0000100000001 /* MerilVolumeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000162CE0000100000001 /* MerilVolumeEngine.swift */; };
+		AA1000172CE0000100000001 /* MerilMprReslicer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000172CE0000100000001 /* MerilMprReslicer.swift */; };
+		AA1000182CE0000100000001 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = BB1000182CE0000100000001 /* Shaders.metal */; };
+		AA1000192CE0000100000001 /* MerilMetalRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000192CE0000100000001 /* MerilMetalRenderer.swift */; };
+		AA1000202CE0000100000001 /* MeasurementCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000202CE0000100000001 /* MeasurementCalculator.swift */; };
+		AA1000212CE0000100000001 /* MerilLabelmapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000212CE0000100000001 /* MerilLabelmapManager.swift */; };
+		AA1000222CE0000100000001 /* SurfaceMeshGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000222CE0000100000001 /* SurfaceMeshGenerator.swift */; };
+		AA1000232CE0000100000001 /* MerilStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000232CE0000100000001 /* MerilStorageManager.swift */; };
+		AA1000242CE0000100000001 /* MerilCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000242CE0000100000001 /* MerilCacheManager.swift */; };
+		AA1000252CE0000100000001 /* MerilKeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000252CE0000100000001 /* MerilKeychainManager.swift */; };
+		AA1000262CE0000100000001 /* MerilApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000262CE0000100000001 /* MerilApiClient.swift */; };
+		AA1000272CE0000100000001 /* MerilPacsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000272CE0000100000001 /* MerilPacsClient.swift */; };
+		AA1000282CE0000100000001 /* ZipArchiveExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000282CE0000100000001 /* ZipArchiveExtractor.swift */; };
+		AA1000292CE0000100000001 /* MerilDicomImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000292CE0000100000001 /* MerilDicomImporter.swift */; };
+		AA1000302CE0000100000001 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000302CE0000100000001 /* Theme.swift */; };
+		AA1000312CE0000100000001 /* ModalityChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000312CE0000100000001 /* ModalityChipView.swift */; };
+		AA1000322CE0000100000001 /* LoadingAndErrorViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000322CE0000100000001 /* LoadingAndErrorViews.swift */; };
+		AA1000332CE0000100000001 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000332CE0000100000001 /* LoginView.swift */; };
+		AA1000342CE0000100000001 /* StudyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000342CE0000100000001 /* StudyCardView.swift */; };
+		AA1000352CE0000100000001 /* StudiesDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000352CE0000100000001 /* StudiesDashboardView.swift */; };
+		AA1000362CE0000100000001 /* StudyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000362CE0000100000001 /* StudyDetailsView.swift */; };
+		AA1000372CE0000100000001 /* ViewerToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000372CE0000100000001 /* ViewerToolbarView.swift */; };
+		AA1000382CE0000100000001 /* CineControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000382CE0000100000001 /* CineControllerView.swift */; };
+		AA1000392CE0000100000001 /* WindowLevelPresetSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000392CE0000100000001 /* WindowLevelPresetSheet.swift */; };
+		AA1000402CE0000100000001 /* DicomMetadataInspectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000402CE0000100000001 /* DicomMetadataInspectorView.swift */; };
+		AA1000412CE0000100000001 /* MeasurementOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000412CE0000100000001 /* MeasurementOverlayView.swift */; };
+		AA1000422CE0000100000001 /* Viewport2DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000422CE0000100000001 /* Viewport2DView.swift */; };
+		AA1000432CE0000100000001 /* DicomViewerHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000432CE0000100000001 /* DicomViewerHostView.swift */; };
+		AA1000442CE0000100000001 /* CrosshairOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000442CE0000100000001 /* CrosshairOverlayView.swift */; };
+		AA1000452CE0000100000001 /* MprSinglePlaneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000452CE0000100000001 /* MprSinglePlaneView.swift */; };
+		AA1000462CE0000100000001 /* VolumeMipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000462CE0000100000001 /* VolumeMipView.swift */; };
+		AA1000472CE0000100000001 /* MprWorkstationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000472CE0000100000001 /* MprWorkstationView.swift */; };
+		AA1000482CE0000100000001 /* SegmentationToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000482CE0000100000001 /* SegmentationToolbarView.swift */; };
+		AA1000492CE0000100000001 /* SegmentationSidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000492CE0000100000001 /* SegmentationSidebarView.swift */; };
+		AA1000502CE0000100000001 /* SegmentationStudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000502CE0000100000001 /* SegmentationStudioView.swift */; };
+		AA1000512CE0000100000001 /* DicomImportSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000512CE0000100000001 /* DicomImportSheet.swift */; };
+		AA1000522CE0000100000001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000522CE0000100000001 /* SettingsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB0000012CE0000100000001 /* MerilView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MerilView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1000012CE0000100000001 /* MerilViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerilViewApp.swift; sourceTree = "<group>"; };
+		BB1000022CE0000100000001 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		BB1000032CE0000100000001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB1000042CE0000100000001 /* DicomStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicomStudy.swift; sourceTree = "<group>"; };
+		BB1000052CE0000100000001 /* DicomSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicomSeries.swift; sourceTree = "<group>"; };
+		BB1000062CE0000100000001 /* DicomInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicomInstance.swift; sourceTree = "<group>"; };
+		BB1000072CE0000100000001 /* DicomMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicomMetadata.swift; sourceTree = "<group>"; };
+		BB1000082CE0000100000001 /* SpatialGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialGeometry.swift; sourceTree = "<group>"; };
+		BB1000092CE0000100000001 /* Measurements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurements.swift; sourceTree = "<group>"; };
+		BB1000102CE0000100000001 /* Annotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotations.swift; sourceTree = "<group>"; };
+		BB1000112CE0000100000001 /* SegmentationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentationModels.swift; sourceTree = "<group>"; };
+		BB1000122CE0000100000001 /* PacsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacsModels.swift; sourceTree = "<group>"; };
+		BB1000132CE0000100000001 /* MerilDicomParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerilDicomParser.swift; sourceTree = "<group>"; };
+		BB1000142CE0000100000001 /* MerilLutEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerilLutEngine.swift; sourceTree = "<group>"; };
+		BB1000152CE0000100000001 /* MerilDicomDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerilDicomDecoder.swift; sourceTree = "<group>"; };
+		BB1000162CE0000100000001 /* MerilVolumeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerilVolumeEngine.swift; sourceTree = "<group>"; };
+		BB1000172CE0000100000001 /* MerilMprReslicer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerilMprReslicer.swift; sourceTree = "<group>"; };
+		BB1000182CE0000100000001 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		BB1000192CE0000100000001 /* MerilMetalRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerilMetalRenderer.swift; sourceTree = "<group>"; };
+		BB1000202CE0000100000001 /* MeasurementCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementCalculator.swift; sourceTree = "<group>"; };
+		BB1000212CE0000100000001 /* MerilLabelmapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerilLabelmapManager.swift; sourceTree = "<group>"; };
+		BB1000222CE0000100000001 /* SurfaceMeshGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfaceMeshGenerator.swift; sourceTree = "<group>"; };
+		BB1000232CE0000100000001 /* MerilStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerilStorageManager.swift; sourceTree = "<group>"; };
+		BB1000242CE0000100000001 /* MerilCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerilCacheManager.swift; sourceTree = "<group>"; };
+		BB1000252CE0000100000001 /* MerilKeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerilKeychainManager.swift; sourceTree = "<group>"; };
+		BB1000262CE0000100000001 /* MerilApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerilApiClient.swift; sourceTree = "<group>"; };
+		BB1000272CE0000100000001 /* MerilPacsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerilPacsClient.swift; sourceTree = "<group>"; };
+		BB1000282CE0000100000001 /* ZipArchiveExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipArchiveExtractor.swift; sourceTree = "<group>"; };
+		BB1000292CE0000100000001 /* MerilDicomImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerilDicomImporter.swift; sourceTree = "<group>"; };
+		BB1000302CE0000100000001 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		BB1000312CE0000100000001 /* ModalityChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalityChipView.swift; sourceTree = "<group>"; };
+		BB1000322CE0000100000001 /* LoadingAndErrorViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingAndErrorViews.swift; sourceTree = "<group>"; };
+		BB1000332CE0000100000001 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BB1000342CE0000100000001 /* StudyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyCardView.swift; sourceTree = "<group>"; };
+		BB1000352CE0000100000001 /* StudiesDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudiesDashboardView.swift; sourceTree = "<group>"; };
+		BB1000362CE0000100000001 /* StudyDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyDetailsView.swift; sourceTree = "<group>"; };
+		BB1000372CE0000100000001 /* ViewerToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerToolbarView.swift; sourceTree = "<group>"; };
+		BB1000382CE0000100000001 /* CineControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CineControllerView.swift; sourceTree = "<group>"; };
+		BB1000392CE0000100000001 /* WindowLevelPresetSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowLevelPresetSheet.swift; sourceTree = "<group>"; };
+		BB1000402CE0000100000001 /* DicomMetadataInspectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicomMetadataInspectorView.swift; sourceTree = "<group>"; };
+		BB1000412CE0000100000001 /* MeasurementOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementOverlayView.swift; sourceTree = "<group>"; };
+		BB1000422CE0000100000001 /* Viewport2DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viewport2DView.swift; sourceTree = "<group>"; };
+		BB1000432CE0000100000001 /* DicomViewerHostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicomViewerHostView.swift; sourceTree = "<group>"; };
+		BB1000442CE0000100000001 /* CrosshairOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrosshairOverlayView.swift; sourceTree = "<group>"; };
+		BB1000452CE0000100000001 /* MprSinglePlaneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MprSinglePlaneView.swift; sourceTree = "<group>"; };
+		BB1000462CE0000100000001 /* VolumeMipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeMipView.swift; sourceTree = "<group>"; };
+		BB1000472CE0000100000001 /* MprWorkstationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MprWorkstationView.swift; sourceTree = "<group>"; };
+		BB1000482CE0000100000001 /* SegmentationToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentationToolbarView.swift; sourceTree = "<group>"; };
+		BB1000492CE0000100000001 /* SegmentationSidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentationSidebarView.swift; sourceTree = "<group>"; };
+		BB1000502CE0000100000001 /* SegmentationStudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentationStudioView.swift; sourceTree = "<group>"; };
+		BB1000512CE0000100000001 /* DicomImportSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicomImportSheet.swift; sourceTree = "<group>"; };
+		BB1000522CE0000100000001 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BB1000532CE0000100000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC0000012CE0000100000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD0000012CE0000100000001 = {
+			isa = PBXGroup;
+			children = (
+				DD1000012CE0000100000001 /* MerilView */,
+				DD0000022CE0000100000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD0000022CE0000100000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000012CE0000100000001 /* MerilView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD1000012CE0000100000001 /* MerilView */ = {
+			isa = PBXGroup;
+			children = (
+				DD1000022CE0000100000001 /* App */,
+				DD1000032CE0000100000001 /* Models */,
+				DD1000042CE0000100000001 /* Imaging */,
+				DD1000052CE0000100000001 /* Storage */,
+				DD1000062CE0000100000001 /* Network */,
+				DD1000072CE0000100000001 /* Ingestion */,
+				DD1000082CE0000100000001 /* Views */,
+				DD1000092CE0000100000001 /* Resources */,
+			);
+			path = MerilView;
+			sourceTree = "<group>";
+		};
+		DD1000022CE0000100000001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BB1000012CE0000100000001 /* MerilViewApp.swift */,
+				BB1000022CE0000100000001 /* AppState.swift */,
+				BB1000032CE0000100000001 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DD1000032CE0000100000001 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB1000042CE0000100000001 /* DicomStudy.swift */,
+				BB1000052CE0000100000001 /* DicomSeries.swift */,
+				BB1000062CE0000100000001 /* DicomInstance.swift */,
+				BB1000072CE0000100000001 /* DicomMetadata.swift */,
+				BB1000082CE0000100000001 /* SpatialGeometry.swift */,
+				BB1000092CE0000100000001 /* Measurements.swift */,
+				BB1000102CE0000100000001 /* Annotations.swift */,
+				BB1000112CE0000100000001 /* SegmentationModels.swift */,
+				BB1000122CE0000100000001 /* PacsModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD1000042CE0000100000001 /* Imaging */ = {
+			isa = PBXGroup;
+			children = (
+				BB1000132CE0000100000001 /* MerilDicomParser.swift */,
+				BB1000142CE0000100000001 /* MerilLutEngine.swift */,
+				BB1000152CE0000100000001 /* MerilDicomDecoder.swift */,
+				BB1000162CE0000100000001 /* MerilVolumeEngine.swift */,
+				BB1000172CE0000100000001 /* MerilMprReslicer.swift */,
+				BB1000182CE0000100000001 /* Shaders.metal */,
+				BB1000192CE0000100000001 /* MerilMetalRenderer.swift */,
+				BB1000202CE0000100000001 /* MeasurementCalculator.swift */,
+				BB1000212CE0000100000001 /* MerilLabelmapManager.swift */,
+				BB1000222CE0000100000001 /* SurfaceMeshGenerator.swift */,
+			);
+			path = Imaging;
+			sourceTree = "<group>";
+		};
+		DD1000052CE0000100000001 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				BB1000232CE0000100000001 /* MerilStorageManager.swift */,
+				BB1000242CE0000100000001 /* MerilCacheManager.swift */,
+				BB1000252CE0000100000001 /* MerilKeychainManager.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		DD1000062CE0000100000001 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BB1000262CE0000100000001 /* MerilApiClient.swift */,
+				BB1000272CE0000100000001 /* MerilPacsClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DD1000072CE0000100000001 /* Ingestion */ = {
+			isa = PBXGroup;
+			children = (
+				BB1000282CE0000100000001 /* ZipArchiveExtractor.swift */,
+				BB1000292CE0000100000001 /* MerilDicomImporter.swift */,
+			);
+			path = Ingestion;
+			sourceTree = "<group>";
+		};
+		DD1000082CE0000100000001 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB1000302CE0000100000001 /* Theme.swift */,
+				BB1000312CE0000100000001 /* ModalityChipView.swift */,
+				BB1000322CE0000100000001 /* LoadingAndErrorViews.swift */,
+				BB1000332CE0000100000001 /* LoginView.swift */,
+				BB1000342CE0000100000001 /* StudyCardView.swift */,
+				BB1000352CE0000100000001 /* StudiesDashboardView.swift */,
+				BB1000362CE0000100000001 /* StudyDetailsView.swift */,
+				BB1000372CE0000100000001 /* ViewerToolbarView.swift */,
+				BB1000382CE0000100000001 /* CineControllerView.swift */,
+				BB1000392CE0000100000001 /* WindowLevelPresetSheet.swift */,
+				BB1000402CE0000100000001 /* DicomMetadataInspectorView.swift */,
+				BB1000412CE0000100000001 /* MeasurementOverlayView.swift */,
+				BB1000422CE0000100000001 /* Viewport2DView.swift */,
+				BB1000432CE0000100000001 /* DicomViewerHostView.swift */,
+				BB1000442CE0000100000001 /* CrosshairOverlayView.swift */,
+				BB1000452CE0000100000001 /* MprSinglePlaneView.swift */,
+				BB1000462CE0000100000001 /* VolumeMipView.swift */,
+				BB1000472CE0000100000001 /* MprWorkstationView.swift */,
+				BB1000482CE0000100000001 /* SegmentationToolbarView.swift */,
+				BB1000492CE0000100000001 /* SegmentationSidebarView.swift */,
+				BB1000502CE0000100000001 /* SegmentationStudioView.swift */,
+				BB1000512CE0000100000001 /* DicomImportSheet.swift */,
+				BB1000522CE0000100000001 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DD1000092CE0000100000001 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB1000532CE0000100000001 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE0000012CE0000100000001 /* MerilView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF0000012CE0000100000001 /* Build configuration list for PBXNativeTarget "MerilView" */;
+			buildPhases = (
+				CC0000012CE0000100000001 /* Frameworks */,
+				EE1000012CE0000100000001 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MerilView;
+			productName = MerilView;
+			productReference = BB0000012CE0000100000001 /* MerilView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					EE0000012CE0000100000001 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = FF0000022CE0000100000001 /* Build configuration list for PBXProject "MerilView-iOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD0000012CE0000100000001;
+			productRefGroup = DD0000022CE0000100000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE0000012CE0000100000001 /* MerilView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE1000012CE0000100000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA1000012CE0000100000001 /* MerilViewApp.swift in Sources */,
+				AA1000022CE0000100000001 /* AppState.swift in Sources */,
+				AA1000032CE0000100000001 /* ContentView.swift in Sources */,
+				AA1000042CE0000100000001 /* DicomStudy.swift in Sources */,
+				AA1000052CE0000100000001 /* DicomSeries.swift in Sources */,
+				AA1000062CE0000100000001 /* DicomInstance.swift in Sources */,
+				AA1000072CE0000100000001 /* DicomMetadata.swift in Sources */,
+				AA1000082CE0000100000001 /* SpatialGeometry.swift in Sources */,
+				AA1000092CE0000100000001 /* Measurements.swift in Sources */,
+				AA1000102CE0000100000001 /* Annotations.swift in Sources */,
+				AA1000112CE0000100000001 /* SegmentationModels.swift in Sources */,
+				AA1000122CE0000100000001 /* PacsModels.swift in Sources */,
+				AA1000132CE0000100000001 /* MerilDicomParser.swift in Sources */,
+				AA1000142CE0000100000001 /* MerilLutEngine.swift in Sources */,
+				AA1000152CE0000100000001 /* MerilDicomDecoder.swift in Sources */,
+				AA1000162CE0000100000001 /* MerilVolumeEngine.swift in Sources */,
+				AA1000172CE0000100000001 /* MerilMprReslicer.swift in Sources */,
+				AA1000182CE0000100000001 /* Shaders.metal in Sources */,
+				AA1000192CE0000100000001 /* MerilMetalRenderer.swift in Sources */,
+				AA1000202CE0000100000001 /* MeasurementCalculator.swift in Sources */,
+				AA1000212CE0000100000001 /* MerilLabelmapManager.swift in Sources */,
+				AA1000222CE0000100000001 /* SurfaceMeshGenerator.swift in Sources */,
+				AA1000232CE0000100000001 /* MerilStorageManager.swift in Sources */,
+				AA1000242CE0000100000001 /* MerilCacheManager.swift in Sources */,
+				AA1000252CE0000100000001 /* MerilKeychainManager.swift in Sources */,
+				AA1000262CE0000100000001 /* MerilApiClient.swift in Sources */,
+				AA1000272CE0000100000001 /* MerilPacsClient.swift in Sources */,
+				AA1000282CE0000100000001 /* ZipArchiveExtractor.swift in Sources */,
+				AA1000292CE0000100000001 /* MerilDicomImporter.swift in Sources */,
+				AA1000302CE0000100000001 /* Theme.swift in Sources */,
+				AA1000312CE0000100000001 /* ModalityChipView.swift in Sources */,
+				AA1000322CE0000100000001 /* LoadingAndErrorViews.swift in Sources */,
+				AA1000332CE0000100000001 /* LoginView.swift in Sources */,
+				AA1000342CE0000100000001 /* StudyCardView.swift in Sources */,
+				AA1000352CE0000100000001 /* StudiesDashboardView.swift in Sources */,
+				AA1000362CE0000100000001 /* StudyDetailsView.swift in Sources */,
+				AA1000372CE0000100000001 /* ViewerToolbarView.swift in Sources */,
+				AA1000382CE0000100000001 /* CineControllerView.swift in Sources */,
+				AA1000392CE0000100000001 /* WindowLevelPresetSheet.swift in Sources */,
+				AA1000402CE0000100000001 /* DicomMetadataInspectorView.swift in Sources */,
+				AA1000412CE0000100000001 /* MeasurementOverlayView.swift in Sources */,
+				AA1000422CE0000100000001 /* Viewport2DView.swift in Sources */,
+				AA1000432CE0000100000001 /* DicomViewerHostView.swift in Sources */,
+				AA1000442CE0000100000001 /* CrosshairOverlayView.swift in Sources */,
+				AA1000452CE0000100000001 /* MprSinglePlaneView.swift in Sources */,
+				AA1000462CE0000100000001 /* VolumeMipView.swift in Sources */,
+				AA1000472CE0000100000001 /* MprWorkstationView.swift in Sources */,
+				AA1000482CE0000100000001 /* SegmentationToolbarView.swift in Sources */,
+				AA1000492CE0000100000001 /* SegmentationSidebarView.swift in Sources */,
+				AA1000502CE0000100000001 /* SegmentationStudioView.swift in Sources */,
+				AA1000512CE0000100000001 /* DicomImportSheet.swift in Sources */,
+				AA1000522CE0000100000001 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FF1000012CE0000100000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FF1000022CE0000100000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF2000012CE0000100000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MerilView/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.merilview.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF2000022CE0000100000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MerilView/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.merilview.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF0000012CE0000100000001 /* Build configuration list for PBXNativeTarget "MerilView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF2000012CE0000100000001 /* Debug */,
+				FF2000022CE0000100000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF0000022CE0000100000001 /* Build configuration list for PBXProject "MerilView-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1000012CE0000100000001 /* Debug */,
+				FF1000022CE0000100000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
