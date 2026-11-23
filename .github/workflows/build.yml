@@ -14,8 +14,10 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Check Xcode Version
-        run: xcodebuild -version
+      - name: Inspect Xcode and Project Schemes
+        run: |
+          xcodebuild -version
+          xcodebuild -list -project MerilView-iOS.xcodeproj
 
       - name: Build Unsigned IPA for Sideloadly
         run: |
