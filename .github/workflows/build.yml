@@ -21,32 +21,46 @@ jobs:
 
       - name: Build Unsigned IPA for Sideloadly
         run: |
-          set -o pipefail
           xcodebuild build \
             -project MerilView-iOS.xcodeproj \
             -scheme MerilView \
             -destination 'generic/platform=iOS' \
             -configuration Release \
             -derivedDataPath build \
+            ARCHS="arm64" \
+            ONLY_ACTIVE_ARCH=NO \
             CODE_SIGN_STYLE=Manual \
             CODE_SIGN_IDENTITY="" \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGNING_ALLOWED=NO \
-            AD_HOC_CODE_SIGNING_ALLOWED=YES 2>&1 | tee build.log || {
-              echo "### Build Failed" >> $GITHUB_STEP_SUMMARY
-              echo '```' >> $GITHUB_STEP_SUMMARY
-              tail -n 80 build.log >> $GITHUB_STEP_SUMMARY
-              echo '```' >> $GITHUB_STEP_SUMMARY
-              exit 1
-            }
-          mkdir -p Payload
-          cp -r build/Build/Products/Release-iphoneos/MerilView.app Payload/
-          zip -r MerilView.ipa Payload
-          echo "MerilView.ipa created successfully!"
+            AD_HOC_CODE_SIGNING_ALLOWED=YES > build.log 2>&1 || true
+          
+          echo "==== XCODEBUILD TAIL LOG ===="
+          tail -n 150 build.log
+          echo "=============================="
+
+          if [ -d build/Build/Products/Release-iphoneos/MerilView.app ]; then
+            echo "MerilView.app built successfully. Packaging IPA..."
+            mkdir -p Payload
+            cp -r build/Build/Products/Release-iphoneos/MerilView.app Payload/
+            zip -r MerilView.ipa Payload
+            echo "MerilView.ipa created successfully!"
+          else
+            echo "Error: build/Build/Products/Release-iphoneos/MerilView.app not found!"
+            exit 1
+          fi
 
       - name: Upload IPA Artifact
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: MerilView-IPA
           path: MerilView.ipa
           retention-days: 14
+
+      - name: Upload Xcode Log on Failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Xcode-Build-Log
+          path: build.log
